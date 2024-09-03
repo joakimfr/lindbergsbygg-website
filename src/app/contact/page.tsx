@@ -8,7 +8,7 @@ import { ContactDetails } from "./components/ContactDetails/ContactDetails";
 export default function Contact() {
   return (
     <PagesLayout>
-      <div className="contentWrapper">
+      <div className="contacts">
         <section className="content">
           <p className="content__text">
             Om du är i behov av renovering eller att bygga nytt, tveka inte att

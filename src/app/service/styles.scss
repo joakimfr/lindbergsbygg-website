@@ -1,4 +1,10 @@
 .services {
-  height: 500px;
-  background-color: blue;
+  
+  &__image {
+    position: relative;
+    width: 500px;
+    height: 320px;
+    flex-shrink: 0;
+  }
 }
+

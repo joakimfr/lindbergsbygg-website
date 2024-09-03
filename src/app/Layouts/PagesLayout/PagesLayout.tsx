@@ -29,7 +29,7 @@ export const PagesLayout: React.FC<{ children: React.ReactNode }> = ({
   const isMobile = useWindowSize();
 
   return (
-    <div className="layout">
+    <div className="layoutPages">
       {isMobile ? <MobileHeader /> : <DesktopHeader />}
       <div className="imageContainerContact">
         <Image
