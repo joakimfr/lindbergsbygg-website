@@ -1,16 +1,21 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   height: 60px;
   align-items: center;
+  background-color: #F5F5F5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logoContainer {
-  
+  color: black;
 }
 
 .navbar {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
+  color: #1E1E1E;
 }

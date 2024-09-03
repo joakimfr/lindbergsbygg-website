@@ -1,25 +1,24 @@
-import { BaseLayout } from "@/Layouts/BaseLayout/BaseLayout";
+import { PagesLayout } from "../Layouts/PagesLayout/PagesLayout";
 import React from "react";
+import "./styles.scss";
+import Image from "next/image";
+import { Form } from "./components/Form/Form";
+import { ContactDetails } from "./components/ContactDetails/ContactDetails";
 
 export default function Contact() {
   return (
-    <BaseLayout>
-      <h2>Kontakta Oss</h2>
-      <form>
-        <div>
-          <label htmlFor="name">Namn</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div>
-          <label htmlFor="email">E-post</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div>
-          <label htmlFor="message">Meddelande</label>
-          <textarea id="message" name="message" required />
-        </div>
-        <button type="submit">Skicka</button>
-      </form>
-    </BaseLayout>
+    <PagesLayout>
+      <div className="contentWrapper">
+        <section className="content">
+          <p className="content__text">
+            Om du är i behov av renovering eller att bygga nytt, tveka inte att
+            kontakta oss. Maila eller ring oss så ordnar vi en kostnadsfri
+            offert.
+          </p>
+          <Form />
+        </section>
+        <ContactDetails />
+      </div>
+    </PagesLayout>
   );
 }

@@ -1,7 +1,11 @@
+import "./styles.scss";
+import Link from "next/link";
+
 export const Footer = () => {
   return (
-    <div className="bg-gray-800 text-white p-4 text-center mt-auto">
+    <div className="footer">
       <p>Footer</p>
+      <p>hallå</p>
     </div>
   )
 }

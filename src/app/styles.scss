@@ -1,0 +1,190 @@
+@use 'src/styles/utils' as *;
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.circleContainer {
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  gap: 3rem;
+
+  @include breakpoint('lg') {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.circleContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circleContainer h2 {
+  font-size: 48px;
+}
+
+.contactButton {
+  font-size: 20px;
+  background-color: #007BFF;
+  padding: .5rem 2rem;
+}
+
+.contentContainer {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-bottom: 5rem;
+
+  @include breakpoint ('md') {
+    gap: 2rem;
+  }
+}
+
+.contentContainer h2 {
+  color: #1E1E1E;
+  font-size: 24px;
+  text-align: center;
+  padding: 2rem 1rem 0rem 1rem;
+}
+
+.contentContainer p {
+  color: #1E1E1E;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  gap: 2rem;
+  padding: 0 1rem 0 1rem;
+
+  @include breakpoint('lg') {
+   padding: 0;
+  }
+
+  @include breakpoint('lg') {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  
+}
+
+.textContent {
+  display: flex;
+  flex-basis: 100%; /* Låt texten ta hela bredden vid mindre skärmar */
+  flex-grow: 1;
+
+  @include breakpoint('lg') {
+    padding: 1rem 3rem;
+  }
+}
+
+.textContent p {
+  display: flex;
+}
+
+.slideshow {
+  position: relative;
+  width: 560px;
+  height: 230px;
+  flex-shrink: 0;
+
+  @include breakpoint('sm') {
+    width: 100%;
+    height: 180px;
+  }
+}
+
+.servicesContainer {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #1A1616;
+  display: flex;
+  justify-content: center;
+}
+
+.cardsWrapper {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+
+  @include breakpoint('mdlg') {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+}
+
+.card {
+  width: 280px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cardImage {
+  border-radius: 6px;
+}
+
+.cardButton {
+  background-color: #007BFF;
+  color: #FFFFFF;
+  padding: .5rem 1.5rem;
+  margin-top: auto;
+}
+
+.cardBorder {
+  border-left: 1px solid #C3B1B1;
+  border-right: 1px solid #C3B1B1;
+}
+
+.contact {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+
+  &__title {
+    color: black;
+    font-size: 28px;
+  }
+}

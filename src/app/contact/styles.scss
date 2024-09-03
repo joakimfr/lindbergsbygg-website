@@ -1,0 +1,21 @@
+.contentWrapper {
+  padding: 0 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  justify-content: space-between;
+  gap: 1rem;
+
+  &__text {
+    color: black;
+    max-width: 450px;
+  }
+}
