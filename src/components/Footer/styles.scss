@@ -1,6 +1,7 @@
+@use 'src/styles/utils' as *;
+
 .footer {
-  background-color: #2C2C2C;
+  background-color: #1E1E1E;
   display: flex;
   min-height: 200px;
-  flex-direction: column;
 }
